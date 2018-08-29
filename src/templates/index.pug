@@ -1,0 +1,139 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home.home-slider
+		.owl-carousel.owl-theme
+			.item
+				img(src="./img/home_slider_2.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-7
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+			.item
+				img(src="./img/layer 5.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-7
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+			.item
+				img(src="./img/home_slider_2.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-7
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+	section.home.home_infor
+		.container
+			.row
+				.col.text-center
+					h2 TIN TỨC
+			.row
+				.col-md-4
+					a(href="")
+						figure
+							img(src="./img/op2.png", alt="")
+						b Trung tâm đào tạo IT chuyên nghiệp
+						br
+						time 26/00/2018
+						p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón 
+				.col-md-4
+					a(href="")
+						figure
+							img(src="./img/op3.png", alt="")
+						b Trung tâm đào tạo IT chuyên nghiệp
+						br
+						time 26/00/2018
+						p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón 
+				.col-md-4
+					a(href="")
+						figure
+							img(src="./img/op5.png", alt="")
+						b Trung tâm đào tạo IT chuyên nghiệp
+						br
+						time 26/00/2018
+						p Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón 
+	section.home.home_develop
+		.title
+			.container
+				.row
+					.col.text-center
+						h2 ĐỊNH HƯỚNG PHÁT TRIỂN
+				.row
+					.col-md-3.item
+						figure
+							.blockimg
+								img(src="./img/icon-1.png", alt="", srcset="")
+							figcaption
+									b TẦM NHÌN
+									p Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động
+					.col-md-3.item
+						figure
+							.blockimg
+								img(src="./img/icon-2.png", alt="", srcset="")
+							figcaption
+								b TẦM NHÌN
+								p Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động
+					.col-md-3.item
+						figure
+							.blockimg
+								img(src="./img/icon-3.png", alt="", srcset="")
+							figcaption
+								b TẦM NHÌN
+								p Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động
+					.col-md-3.item
+						figure
+							.blockimg
+								img(src="./img/icon7.png", alt="", srcset="")
+							figcaption
+								b TẦM NHÌN
+								p Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động
+	section.home.home_loren
+				.container
+					.row
+						.col.text-center
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cum culpa eligendi at aspernatur, ea blanditiis fugiat dolor? Quam, laboriosam ad quidem maxime animi laboriosam ad quidem maxime animi Rerum cum culpa eligendi at aspernatur, laboriosam ad quidem maxime animi laboriosam ad quidem
+							b 
+								a.btn.btn-more XEM THÊM
+	section.home.home_grup
+				.item
+					.title
+						.container
+							.row
+								.col.text-center
+									h2 ĐỊNH HƯỚNG PHÁT TRIỂN
+									ul
+										li
+											a.btn.bnt-more(href="")
+												b TẤT CẢ
+											a.btn.btn-more(href="") 
+												b GROUP
+											a.btn.btn-more(href="") 
+												b TIN THỊ TRƯỜNG
+											a.btn.btn-more(href="") 
+												b TIN VỊT
+							.row
+								.col-md-4.item
+									figure
+										.blockimg.img
+											img(src="./img/op3.png", alt="")
+								.col-md-4.item
+									figure
+										.blockimg.img
+											img(src="./img/op3.png", alt="")
+								.col-md-4.item
+									figure
+										.blockimg.img
+											img(src="./img/op3.png", alt="")

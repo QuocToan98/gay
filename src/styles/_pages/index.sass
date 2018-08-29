@@ -1,0 +1,176 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home
+	position: relative
+	display: block
+	align-items: center
+.home-slider
+	.owl-carousel
+		// Phần Slider
+		.item
+			position: relative
+			.title
+				+pad(2rem 0)
+				height: 100%
+				width: 100%
+				display: flex
+				align-items: center
+			+media-breakpoint-up(md)
+				.title
+					+pos(abs, 0 null null 0)
+					color: $whites
+					+text-shadow()
+					h2
+						+fz(3rem)
+					p 
+						+fz(1.5rem)
+						+lh(2rem)
+		// Phần Control
+		.owl-dots
+			margin-bottom: 2rem
+/////////////////////////////////
+// Phần News
+/////////////////////////////////
+
+.home.home_develop
+	background-image: url('../img/big-1.png')
+	.blockimg
+		img
+			display: block
+			width: 20%
+		figcaption
+			margin: 5rem 0rem	
+
+	.title
+		+pad(3rem 0)
+		height: 100%
+		width: 100%
+		display: flex
+		align-items: center
+		+media-breakpoint-up(md)
+			.title
+				+pos(abs, 0 null null 0)
+				h2
+					+fz(30px)
+					font-family: Myriad Pro
+					margin: -5rem 0rem 0rem 0rem
+	
+/////////////////////////////////
+// Phần News
+/////////////////////////////////
+
+.home_infor
+	.container
+		position: relative
+		figure
+			img
+				display: block
+				width: 100%
+				margin: 2.6rem 0rem
+		.col-md-4
+			margin: 2.6rem 0rem
+			p
+				line-height: 1.3rem
+		h2
+			font-size: 30px
+			margin: 1.3rem
+			font-family: Myriad Pro
+			margin: 1rem 0rem
+			&:before
+				position: absolute
+				content: ""
+				display: unset
+				width: 6rem
+				height: 0.3rem
+				background: #11c8cc
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -0.2rem
+			&:after
+				position: absolute
+				content: ""
+				display: unset
+				width: 1rem
+				height: 1rem
+				background: white
+				left: 50%
+				transform: translateX(-50%)
+				bottom: -0.5rem
+				border-radius: 50%
+				border: 0.15rem solid  #11c8cc	
+
+.home_loren
+	background-image: url('../img/sub-2.png')
+	.container
+		position: relative
+		align-items: center
+		display: flex
+		text-align: center
+		p
+			line-height: 1.5rem
+			font-size: 1.3rem
+			color: white
+		.btn.btn-more
+			background: $btn
+			color: white
+			margin: 3.4rem 0rem
+			border-radius: 15px
+			width: 11.5rem
+			&:hover
+				background: black
+				color: yellow
+
+.home_grup
+	.title
+		position: relative
+		text-align: center
+		display: flex
+		align-items: center
+		.col-md-4
+			margin: 3.4rem 0rem
+		h2
+			margin: 5rem 0rem
+			+fz(30px)
+			font-family: Myriad Pro
+			&:before
+				position: absolute
+				content: ""
+				display: unset
+				width: 6rem
+				height: 0.3rem
+				background: #11c8cc
+				left: 50%
+				transform: translateX(-50%)
+				bottom: 2.3rem
+			&:after
+				position: absolute
+				content: ""
+				display: unset
+				width: 1.1rem
+				height: 1.1rem
+				background: white
+				left: 50%
+				transform: translateX(-50%)
+				bottom: 1.95rem
+				border-radius: 50%
+				border: 0.15rem solid  #11c8cc	
+		figure
+			img
+				display: block
+				width: 100%
+		ul
+			li
+				list-style: none
+				margin: -2.7rem 0rem
+				a
+					margin: 0rem 0.3rem
+					color: black
+					min-height: 1.5rem
+					border-radius: 30px
+					+fz(14px)
+					font-family: Myriad Pro
+					&:hover
+						background: $btn
+						border-radius: 15px
+						color: white
