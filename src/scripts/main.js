@@ -1,31 +1,55 @@
 // Main
 $(document).ready(function () {
-	// Phần Slider
-	$('.home-slider .owl-carousel').owlCarousel({
-		items: 1,
-		nav: false,
-		dots: true,
-		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-	});
-	// Phần Clients
-	$('.home-clients .owl-carousel').owlCarousel({
-		items: 1,
-		nav: true,
-		dots: false,
-		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-		responsive: {
-			// breakpoint from 480 up
-			480: {
-				items: 2,
+	$('.home_slider .owl-carousel').owlCarousel({
+	loop:false,
+	margin:0,
+	nav:false,
+	items:1,
+	responsive:{
+		0:{
+			items:1
+		},
+		600:{
+			items:1
+		},
+		1000:{
+			items:1
+		}
+	}
+})
+	$('.home_clients .owl-carousel').owlCarousel({
+		loop:true,
+		margin:0,
+		nav:true,
+		items:1,
+		dots:false,
+		navText: ['<i class="fa fa-caret-left"></i>','<i class="fa fa-caret-right"></i>'],
+		responsive:{
+			0:{
+				items:2
 			},
-			// breakpoint from 768 up
-			768: {
-				items: 4,
+			600:{
+				items:4
 			},
-			// breakpoint from 992 up
-			992: {
-				items: 6,
+			1000:{
+				items:5
+			}
+		}
+	})
+})
+	$('.owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
 			}
 		}
 	});
-});

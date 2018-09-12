@@ -102,39 +102,53 @@
     </header><!-- ////////////// HEADER ////////////// --><!-- ////////////// End Header ////////////// -->
 <!-- ////////////// Begin Main ////////////// -->
     <main>
+      <!--section.shop
+      .container
+      	.row
+      		.col-md-9.order-md-1
+      			.row
+      				-for(x=0;x<9;x++)
+      					.col-sm-6.col-lg-4.item
+      						figure
+      							img.img-fluid(src="./img/b.jpg", alt="")
+      							figcaption
+      								h3 san pham
+      								.price &7
+      								.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum mollitia perferendis enim rerum voluptatibus quis eveniet dignissimos possimus itaque facilis! At itaque consequatur nulla eligendi, voluptates repellendus explicabo error repellat.
+      		.col-md-3.order-md-0
+      			.list-group
+      				-for(x=0;x<9;x++)
+      					a.btn.btn-more(href="") menu
+      -->
       <section class="home home-slider">
-        <div class="owl-carousel owl-theme">
-          <div class="item"><img src="./img/home_slider_2.png" alt="">
-            <div class="title">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-7">
-                    <h2>Chúng tôi là FullStack Vietnam</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! </p>
-                  </div>
-                </div>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-4 item">
+              <h3>Chúng tôi là FULL STACK VIETNAM</h3>
+              <p>Reference site about Lorem Ipsum Reference site about Lorem Ipsum Reference site about Lorem Ipsum gfsu lorem adv sass develop over	</p><a class="btn btn-more" href="">XEM CHI TIẾT</a>
             </div>
           </div>
-          <div class="item"><img src="./img/layer 5.png" alt="">
-            <div class="title">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-7">
-                    <h2>Chúng tôi là FullStack Vietnam</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item"><img src="./img/home_slider_2.png" alt="">
-            <div class="title">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-7">
-                    <h2>Chúng tôi là FullStack Vietnam</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! </p>
+        </div>
+      </section>
+      <section class="home home-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <figure><img class="d-block w-100" src="./img/banner.png" alt="First slide"></figure>
+                  </div>    
+                  <div class="carousel-item">
+                    <figure><img class="d-block w-100" src="./img/banner.png" alt="Second slide"></figure>
+                  </div>    
+                  <div class="carousel-item">
+                    <figure><img class="d-block w-100" src="./img/banner.png" alt="Third slide"></figure>
                   </div>
                 </div>
               </div>
@@ -142,111 +156,68 @@
           </div>
         </div>
       </section>
-      <section class="home home_infor">
+      <section class="home home-fus">
         <div class="container">
           <div class="row">
             <div class="col text-center">
-              <h2>TIN TỨC</h2>
+              <h2>FULLSTACKVIETNAM</h2>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4"><a href="">
-                <figure><img src="./img/op2.png" alt=""></figure><b>Trung tâm đào tạo IT chuyên nghiệp</b><br>
-                <time>26/00/2018</time>
-                <p>Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón </p></a></div>
-            <div class="col-md-4"><a href="">
-                <figure><img src="./img/op3.png" alt=""></figure><b>Trung tâm đào tạo IT chuyên nghiệp</b><br>
-                <time>26/00/2018</time>
-                <p>Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón </p></a></div>
-            <div class="col-md-4"><a href="">
-                <figure><img src="./img/op5.png" alt=""></figure><b>Trung tâm đào tạo IT chuyên nghiệp</b><br>
-                <time>26/00/2018</time>
-                <p>Với lợi thế gần khu vực sân bay Long Thành, Nhơn Trạch tiếp tục được hưởng lợi lớn từ dự án trọng điểm của Quốc gia. Sân bay Long Thành quy hoạch đế đón </p></a></div>
-          </div>
-        </div>
-      </section>
-      <section class="home home_develop">
-        <div class="title">
-          <div class="container">
-            <div class="row">
-              <div class="col text-center">
-                <h2>ĐỊNH HƯỚNG PHÁT TRIỂN</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 item">
-                <figure>
-                  <div class="blockimg"><img src="./img/icon-1.png" alt="" srcset=""></div>
-                  <figcaption><b>TẦM NHÌN</b>
-                    <p>Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động</p>
+          <div class="row lov">
+            <div class="col-sm-6 col-md-3"><a href="#">
+                <figure><img src="./img/gg1.png" alt="">
+                  <figcaption>
+                    <h3>TRUNG TÂM DÀO TẠO IT CHUYÊN NGHIỆP</h3>
+                    <price>$34.34</price>
                   </figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3 item">
-                <figure>
-                  <div class="blockimg"><img src="./img/icon-2.png" alt="" srcset=""></div>
-                  <figcaption><b>TẦM NHÌN</b>
-                    <p>Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động</p>
+                </figure></a></div>
+            <div class="col-sm-6 col-md-3"><a href="#">
+                <figure><img src="./img/gg2.png" alt="">
+                  <figcaption>
+                    <h3>TRUNG TÂM DÀO TẠO IT CHUYÊN NGHIỆP</h3>
+                    <price>$34.34</price>
                   </figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3 item">
-                <figure>
-                  <div class="blockimg"><img src="./img/icon-3.png" alt="" srcset=""></div>
-                  <figcaption><b>TẦM NHÌN</b>
-                    <p>Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động</p>
+                </figure></a></div>
+            <div class="col-sm-6 col-md-3"><a href="#">
+                <figure><img src="./img/gg3.png" alt="">
+                  <figcaption>
+                    <h3>TRUNG TÂM DÀO TẠO IT CHUYÊN NGHIỆP</h3>
+                    <price>$34.34</price>
                   </figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3 item">
-                <figure>
-                  <div class="blockimg"><img src="./img/icon7.png" alt="" srcset=""></div>
-                  <figcaption><b>TẦM NHÌN</b>
-                    <p>Cam kết chất lượng sản phẩm cao nhất luôn đặt chữ tín lên hàng đầu lấy lợi ích của khách hàng làm trung tâm hoạt động</p>
+                </figure></a></div>
+            <div class="col-sm-6 col-md-3"><a href="#">
+                <figure><img src="./img/gg4.png" alt="">
+                  <figcaption>
+                    <h3>TRUNG TÂM DÀO TẠO IT CHUYÊN NGHIỆP</h3>
+                    <price>$34.34</price>
                   </figcaption>
-                </figure>
-              </div>
-            </div>
+                </figure></a></div>
           </div>
         </div>
       </section>
-      <section class="home home_loren">
+      <section class="home home-tis">
+        <div class="container">
+          <div class="row gay">
+            <!--.col-sm-8
+            h1 HẠNH PHÚC PHÍA SAU
+            p USA'S HOTTEST JEAN
+            -->
+            <!--.col-sm-4h6 SALE 20%
+            -->
+          </div>
+        </div>
+      </section>
+      <section class="home home-last">
         <div class="container">
           <div class="row">
-            <div class="col text-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cum culpa eligendi at aspernatur, ea blanditiis fugiat dolor? Quam, laboriosam ad quidem maxime animi laboriosam ad quidem maxime animi Rerum cum culpa eligendi at aspernatur, laboriosam ad quidem maxime animi laboriosam ad quidem</p><b> <a class="btn btn-more">XEM THÊM</a></b>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="home home_grup">
-        <div class="item">
-          <div class="title">
-            <div class="container">
-              <div class="row">
-                <div class="col text-center">
-                  <h2>ĐỊNH HƯỚNG PHÁT TRIỂN</h2>
-                  <ul>
-                    <li><a class="btn bnt-more" href=""><b>TẤT CẢ</b></a><a class="btn btn-more" href=""> <b>GROUP</b></a><a class="btn btn-more" href=""> <b>TIN THỊ TRƯỜNG</b></a><a class="btn btn-more" href=""> <b>TIN VỊT</b></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 item">
-                  <figure>
-                    <div class="blockimg img"><img src="./img/op3.png" alt=""></div>
-                  </figure>
-                </div>
-                <div class="col-md-4 item">
-                  <figure>
-                    <div class="blockimg img"><img src="./img/op3.png" alt=""></div>
-                  </figure>
-                </div>
-                <div class="col-md-4 item">
-                  <figure>
-                    <div class="blockimg img"><img src="./img/op3.png" alt=""></div>
-                  </figure>
-                </div>
+            <div class="col">
+              <div class="owl-carousel owl-theme">
+                <div class="item"><img src="./img/client_1.png" alt="">    </div>
+                <div class="item"><img src="./img/client_2.png" alt="">    </div>
+                <div class="item"><img src="./img/client_3.png" alt="">    </div>
+                <div class="item"><img src="./img/client_4.png" alt="">    </div>
+                <div class="item"><img src="./img/client_5.png" alt="">    </div>
+                <div class="item"><img src="./img/client_6.png" alt=""></div>
               </div>
             </div>
           </div>
